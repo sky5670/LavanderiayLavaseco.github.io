@@ -260,7 +260,7 @@ button:hover {
 
 .btn_zoom{
     /* background-color: #ffffffa1; */
-    opacity: 0.1;
+    opacity: 0;
 
     padding: 15px;
     transform: translate(-8%, -170%);
