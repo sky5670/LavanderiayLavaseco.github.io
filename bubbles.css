@@ -1,0 +1,97 @@
+.bubble-container_menu {
+   
+    /* position: absolute; */
+    /* top: 30%; */
+    /* left: 70%; */
+    transform: translate(0%, -100%);
+    /* z-index: 3; */
+    
+    text-align: right;
+    transition: opacity 3s ease 6s  /* Transición de opacidad */
+}
+
+
+.bubble_menu {
+    width: 160px;
+    height: 160px;
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+    /* color: #333; */
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.76);
+    animation: riseAndGrow 2s forwards, float 4s 2s infinite;
+    opacity: 1;
+    /*animation: float 4s infinite;*/ /* Animación de flotación */
+}
+.bubble_menu .img_bubble_menu{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.bubble_menu span{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bubble_menu h3{
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    opacity: 0.8;
+    top:165px;
+    color: white;
+    font-size: 25px;
+    /* text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+               1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+    */
+}
+
+.bubble_menu p{
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    opacity: 0.8;
+    top:200px;
+    color: white;
+    font-size: 20px;
+    /* text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+               1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000; */
+
+}
+
+.bubble_menu span:nth-child(1){
+    inset: 10px;
+    border-left: 15px solid #ffffff;
+    filter: blur(8px);
+}
+
+.show-bubbles {
+    opacity: 1;
+}
+
+.show-bubbles .bubble {
+    animation: riseAndGrow 2s forwards, float 4s 2s infinite; /* Aplica ambas animaciones a las burbujas */
+    /*width: 100px;*/ /* Tamaño final */
+    /*height: 100px;*/ /* Tamaño final */
+    opacity: 1; /* Se vuelve visible */
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes riseAndGrow {
+    0% {
+        transform: translateY(100vh) scale(0.1); /* Aparecen desde abajo de la pantalla */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Terminan en su posición final */
+        opacity: 1;
+    }
+}
