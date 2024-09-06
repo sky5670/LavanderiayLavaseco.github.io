@@ -180,7 +180,7 @@ header .menu{
 
     /* width: 100vw; */
     height: 70vh;
-    background-image: url('Fondo_1.png');
+    background-image: url('imagenes/Fondo_1.png');
     background-size: center cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
