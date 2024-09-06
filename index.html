@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laundry Service</title>
+    <title>Lavanderia y Lavaseco</title>
     <link rel="shortcut icon" href="favicon.png">
     <meta name="author" content="Untree.co">
     <meta name="description" content="" />
@@ -14,6 +14,8 @@
     <link href="css/tiny-slider.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bubbles.css">
+    <link rel="stylesheet" href="bubbles_small.css">
+    
     
 </head>
 <body>
@@ -28,7 +30,7 @@
                 </form>
             </div>
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Precios</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Ubicacion</a></li>
@@ -50,24 +52,35 @@
 
     <!-- Sección principal -->
     <main>
-        <div class="hero">
-            <div class="parallax">
+        <div class="parallax">
+            <div class="hero">
+            
+                <div class="content" >
+                    <h1>Los precios mas accesibles en lavado <span class="d-block"></span></h1>    
+                </div>
                 <div class="container-hero"></div>
-                
-                    <div class="content" >
-                            <!-- width="347" height="493"> -->
-                            <button class="btn_zoom" id="zoomBtn" > </button>
-                        </div>
+
+                    
+                    
 
                         <div class="intro-except">
                             <h1>Limpio, seguro y confiable<span class="d-block"></span></h1>
                             <h2>Lavanderia Lavaseco <span class="d-block"></span></h2>
                             <p class="mb-4">Asegurate de mantener tu ropa lo mas limpio y rapido en nuestra lavanderia preferible en Maipú.</p>
+                            
+                            <div class="lavadora-inter">
+                                <button type ="submit" class="redondeo" id="zoomBtn"></button>
+                                <img src="imagenes/Lavadora_interactiva.png" class="lavadora-principal">
+                                <!-- <img src="imagenes/Lavadora_boton.png"> -->
+                                
+                            </div>
                         
                         <div class="intro-except_button">
                             <a href="" class="btn btn-secondary me-2">Vee nuestros servicios</a>
                             <a href="#" class="btn btn-white-outline">Ubicacion</a>
                         </div>
+                    </div>
+      
                             
                         <div class="bubble-container_menu">
                             <div class="bubble_menu" id="bubble1">
@@ -90,16 +103,41 @@
                                 <p>$10.000</p>
                                 <span></span>
                             </div>
-                
+                            
+                            <div class="bubble_menu" id="bubble4">
+                                <a href="index.html">
+                                <img src="imagenes/Producto_3.png" class="img_bubble_menu" alt="Logo de la marca" href="index.html">
+                                <h3>Quimicos</h3>
+                                <p>$10.000</p>
+                                <span></span>
+                                </a>
+                            </div>
                         </div>
 
-                    </div>
+                        <div class="bubble-container_menu_small">
+                            <div class="bubble_menu_small" id="bubble5">
+                                <img src="imagenes/Producto_1.png" class="img_bubble_menu_small" alt="Logo de la marca" href="index.html">
+                                <h3>Lavado</h3>
+                                <p>$10.000</p>
+                                <span></span>
+                            </div>
+
+                            <div class="bubble_menu_small" id="bubble6">
+                                <img src="imagenes/Producto_1.png" class="img_bubble_menu_small" alt="Logo de la marca" href="index.html">
+                                <h3>Lavado</h3>
+                                <p>$10.000</p>
+                                <span></span>
+                            </div>
+                        </div>
+
+                    
                     
                 
 
                 </div>
             </div>
         </div>
+    </div>    
         <!-- Sección de servicios -->
         <section class="services">
 
@@ -130,7 +168,13 @@
                     <img src="imagenes/LogoWeb1.png" class="img_bubble" alt="Logo de la marca" href="index.html">
                     <h3>Preguntas</h3>
                 </div>
-                
+            </div>
+
+            <div class="service-item">
+                <div class="bubble_Item">
+                    <img src="imagenes/LogoWeb4.png" class="img_bubble" alt="Logo de la marca" href="index.html">
+                    <h3>Contacto</h3>
+                </div>
             </div>
             
 
@@ -184,6 +228,7 @@
                             <p>Puedes llamarnos para reservar una hora.</p>
                         </div>
                     </div>
+                    
 
                 </div>
             </div>
@@ -194,7 +239,7 @@
                 </div>
             </div>
         </div>
-        </div></div>
+        </div>
     </main>
     <!-- Start Popular Product -->
 		<div class="popular-product">
@@ -236,6 +281,7 @@
 							</div>
 						</div>
 					</div>
+                    
 
 				</div>
 			</div>
@@ -310,5 +356,7 @@
 			</div>
 		</footer>
 		<!-- End Footer Section -->	
+        <script src="script.js"></script>
 </body>
+</html>
 </html>
