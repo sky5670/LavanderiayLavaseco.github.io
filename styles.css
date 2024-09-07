@@ -11,6 +11,35 @@ body, html {
     background-color: #efefef;;
 }
 
+.service .service-icon{
+  border-radius: 10px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50px;
+  flex: 0 0 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #3b5d50;
+  margin-right: 20px;
+  color: #ffffff;
+}
+
+.container{
+  margin-top: 40px;
+  /* position: relative; */
+    
+    padding-bottom: 56.25%; /* Proporción de 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.container iframe {
+  
+  width: 100%;
+  height: 100%;
+
+}
+
 
 /* Encabezado */
 
@@ -91,7 +120,7 @@ header .search-box{
     color: #fff;
 }
 header ul {
-    flex:2;
+    flex:1;
     display: flex;
     justify-content: space-evenly;
 }
@@ -180,7 +209,7 @@ header .menu{
 
     /* width: 100vw; */
     height: 70vh;
-    background-image: url('imagenes/Fondo_1.png');
+    background-image: url('Fondo_1.png');
     background-size: center cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -220,10 +249,16 @@ header .menu{
 
 /* Servicios */
 .services {
-    display: flex;
-    /* justify-content: center; */
-    /* padding: 10px 20px; */
-    background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* padding: 10px 20px; */
+  background-color: #ffffff;
+  width: 100%;
+  /* height: 20vh; */
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
 }
 
 .service-item {
@@ -240,9 +275,9 @@ header .menu{
 }
 
 .description_container{
-    text-align: left;
+    /* text-align: left; */
     /* position: absolute; */
-    margin: 30px 100px;
+    /* margin: 30px 100px; */
 }
 
 .description_container h1{
@@ -480,12 +515,15 @@ button:hover {
 }
 
 .intro-except{
-    text-align: left;
+    text-align: center;
     padding: 20px;
     /* width: 100%; */
     box-sizing: border-box;
     /* max-width: 1200px; */
-    margin: 140px 30px;
+    margin: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .intro-except h1 {
