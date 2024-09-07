@@ -25,12 +25,12 @@ body, html {
 }
 
 .container{
-  margin-top: 40px;
-  /* position: relative; */
-    
-    padding-bottom: 56.25%; /* Proporción de 16:9 */
-    height: 0;
-    overflow: hidden;
+margin-top: 20px;
+  /* position: absolute; */
+  padding-bottom: 26%;
+  height: 0;
+  overflow: hidden;
+  /* display: flex;*/
 }
 
 .container iframe {
