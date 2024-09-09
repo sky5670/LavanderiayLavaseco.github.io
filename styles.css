@@ -25,18 +25,33 @@ body, html {
 }
 
 .container{
-margin-top: 20px;
-  /* position: absolute; */
-  padding-bottom: 26%;
-  height: 0;
-  overflow: hidden;
-  /* display: flex;*/
+      /* margin-top: 20px; */
+    /* position: absolute; */
+    /* padding-bottom: 26%; */
+    /* height: 0; */
+    /* overflow: hidden; */
+    /* display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap; */
+}
+.container-maps{
+        /* margin-top: 20px; */
+    /* position: absolute; */
+    /* padding-bottom: 26%; */
+    /* height: 0; */
+    overflow: hidden;
+    display: flex;
+    align-content: stretch;
+    flex-direction: column;
 }
 
-.container iframe {
+.container-maps iframe {
   
   width: 100%;
-  height: 100%;
+  margin-top: 40px;
+  /* height: 100%; */
 
 }
 
@@ -149,12 +164,13 @@ header .menu{
         position: fixed;
         top:100px;
         right: -100%;
-        background: rgba(0,0,0,0.5);
+        background: rgb(255 255 255);
         height: calc(100vh - 100px);
-        width:50%;
+        width:30%;
         flex-direction: column;
         align-items: center;
         transition: right 0.5s linear;
+        z-index: 99;
     }
      
     header .menu{
@@ -208,7 +224,7 @@ header .menu{
     /* padding: 40px 0; */
 
     /* width: 100vw; */
-    height: 70vh;
+    /* height: 70vh; */
     background-image: url('imagenes/Fondo_1.png');
     background-size: center cover;
     -webkit-background-size: cover;
@@ -216,20 +232,26 @@ header .menu{
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
+
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
 }
 
 .redondeo{
-  position: absolute;
-  /* padding: 15px; */
-  opacity: 0.4;
-  transform: translate(33%, 60%);
-  -webkit-border-radius: 4;
-  -moz-border-radius: 4;
-  /* border-radius: 100px; */
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.76);
+  /* position: absolute;  */
+    /* padding: 15px; */
+    opacity: 0.1;
+    transform: translate(5%, 40%);
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    /* border-radius: 100px; */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.76);
     box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.76);
 }
 
@@ -252,7 +274,7 @@ header .menu{
   display: flex;
   flex-wrap: wrap;
   /* justify-content: center; */
-  /* padding: 10px 20px; */
+  padding: 30px  20px;
   background-color: #ffffff;
   width: 100%;
   /* height: 20vh; */
@@ -515,15 +537,32 @@ button:hover {
 }
 
 .intro-except{
-    text-align: center;
-    padding: 20px;
-    /* width: 100%; */
-    box-sizing: border-box;
-    /* max-width: 1200px; */
-    margin: 10px 30px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  /* width: 100%; */
+  box-sizing: border-box;
+  /* max-width: 1200px; */
+  margin: 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-except img{
+  /* display: flex; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  /* width: 15vw; */
+  height: 35vh;
+  /* position: absolute; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  object-fit: cover;
+  margin-top: -180px;
 }
 
 .intro-except h1 {
@@ -648,7 +687,8 @@ margin-bottom: 40px;
       position: absolute;
       top: 0px;
       z-index: 1;
-      right: 0; }
+      right: 0; 
+      opacity: 0.5;}
       .footer-section .sofa-img img {
         max-width: 380px; }
     .footer-section .links-wrap {
