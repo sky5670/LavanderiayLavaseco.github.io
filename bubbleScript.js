@@ -1,6 +1,6 @@
 function createBubble() {
     const bubble = document.createElement('div');
-    bubble.classList.add('bubble');
+    bubble.classList.add('bubble_effect');
     
     
     const size = Math.random() * 50 + 20; // Tamaño entre 20px y 70px
