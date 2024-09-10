@@ -218,26 +218,21 @@ header .menu{
 
 /* Sección principal */
 .hero {
-    position: relative;
-    text-align: center;
-    background-color: #eaeaea;
-    /* padding: 40px 0; */
-
-    /* width: 100vw; */
-    height: 70vh;
-    background-image: url('imagenes/Fondo_1.png');
-    background-size: center cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
+  position: relative;
+  text-align: center;
+  background-color: #eaeaea;
+  /* padding: 40px 0; */
+  /* width: 100vw; */
+  height: 70vh;
+  background-image: url(imagenes/Fondo_1.png);
+  background-size: center cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .redondeo{
@@ -469,6 +464,7 @@ button:hover {
 
 .parallax {
   transition: transform 1s ease, opacity 1s ease; /* Transiciones para el zoom y desvanecimiento */
+  z-index: 100;
 }
 
 .zoomed {
@@ -599,8 +595,8 @@ margin-bottom: 40px;
   }
 
   .container-hero{
-    text-align: left;
-    position: relative;
+    text-align: center;
+    /* position: relative; */
     padding: 20px;
     max-height: 0px;
     left: -260px;
