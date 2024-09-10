@@ -2,17 +2,26 @@
     display: none;
     z-index: 3;
     opacity: 0;
-    position: absolute;
+    /* position: absolute; */
     /* top: 50%; */
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
     /* top: 30%; */
     /* left: 70%; */
     /* transform: translate(0%, -100%); */
     /* z-index: 3; */
-    margin-top: 200px;
+    margin-top: 120px;
     text-align: right;
     transition: opacity 3s ease 6s  /* Transición de opacidad */
+}
+
+.container_flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -23,7 +32,7 @@
     align-items: baseline;
     justify-content: center;
     text-align: center;
-    margin: 10px;
+    margin: 50px auto;
     font-size: 18px;
     /* color: #333; */
     border-radius: 50%;
