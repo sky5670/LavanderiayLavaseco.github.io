@@ -6,7 +6,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     margin: 0;
     background-color: #efefef;;
 }
@@ -161,16 +161,16 @@ header .menu{
         position: absolute;
     }
     header ul{
-        position: fixed;
-        top:100px;
-        right: -100%;
-        background: rgb(255 255 255);
-        height: calc(100vh - 100px);
-        width:30%;
-        flex-direction: column;
-        align-items: center;
-        transition: right 0.5s linear;
-        z-index: 99;
+      position: fixed;
+      top: 100px;
+      right: -100%;
+      background: rgb(255 255 255 / 66%);
+      height: calc(100vh - 0px);
+      width: 35%;
+      flex-direction: column;
+      /* align-items: center; */
+      transition: right 0.5s linear;
+      z-index: 99;
     }
      
     header .menu{
@@ -224,7 +224,7 @@ header .menu{
   /* padding: 40px 0; */
   /* width: 100vw; */
   height: 70vh;
-  background-image: url(imagenes/Fondo_1.png);
+  background-image: url(imagenes/Fondo_7.png);
   background-size: center cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -236,10 +236,11 @@ header .menu{
 }
 
 .redondeo{
+  z-index: 5;
   /* position: absolute;  */
     /* padding: 15px; */
     opacity: 0.1;
-    transform: translate(5%, 40%);
+    transform: translate(0%, 67%);
     -webkit-border-radius: 4;
     -moz-border-radius: 4;
     /* border-radius: 100px; */
@@ -280,7 +281,7 @@ header .menu{
 
 .service-item {
     text-align: right;
-    /*max-width: 150px;*/
+    max-width: 180px;
 }
 
 .service-item .icon {
@@ -295,6 +296,7 @@ header .menu{
     /* text-align: left; */
     /* position: absolute; */
     /* margin: 30px 100px; */
+    padding: 40px;
 }
 
 .description_container h1{
@@ -345,7 +347,7 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 40px;
+    margin: 20px;
     font-size: 20px;
     /* color: #333; */
     background-color: #cfe8f4;
@@ -507,20 +509,26 @@ button:hover {
     -webkit-box-shadow: none;
     box-shadow: none; }
   .btn.btn {
-    background: #f9bf29;
-    border-color: #f9bf29; }
+    color: #8662ac;
+    background: #f9bf2900;
+    border-color: #8662ac;
+    font-weight: 1000;
+   }
     .btn.btn:hover {
-      background: #5ba8c7;
-      border-color: #5ba8c7; 
+      color: #ffffff;
+      background: #885ab9;
+      border-color: #8662ac;
     }
 
   .btn.btn-secondary {
-    color: #2f2f2f;
-    background: #f9bf29;
-    border-color: #f9bf29; }
+    color: #8662ac;
+    background: #f9bf2900;
+    border-color: #8662ac;
+    font-weight: 1000; }
     .btn.btn-secondary:hover {
-      background: #f8b810;
-      border-color: #f8b810; }
+      color: #ffffff;
+      background: #885ab9;
+      border-color: #8662ac; }
 
   .btn.btn-white-outline {
     background: transparent;
@@ -533,7 +541,8 @@ button:hover {
 }
 
 .intro-except{
-  text-align: center;
+  
+  text-align: left;
   padding: 20px;
   /* width: 100%; */
   box-sizing: border-box;
@@ -547,7 +556,20 @@ button:hover {
   align-items: center;
 }
 
-.intro-except img{
+.intro-except .ropa_principal{
+  position: absolute;
+  margin-top: 250px;
+  /* display: flex; */
+  margin-left: 45vw;
+  z-index: 0;
+  flex-direction: column;
+  justify-content: center;
+  /* width: 20%; */
+  height: 50%;
+}
+
+.intro-except .lavadora-principal{
+  z-index: 4;
   /* display: flex; */
   flex-direction: column;
   flex-wrap: wrap;
@@ -560,24 +582,28 @@ button:hover {
   object-fit: cover;
   margin-top: -180px;
 }
+.intro-except_button{
+  z-index: 6;
+}
 
 .intro-except h1 {
-font-weight: 700;
-color: #ffffff;
-margin-bottom: 30px;
-font-size: 50px;
+  font-weight: 1000;
+  color: #8662ac;
+  /* margin-bottom: 30px; */
+  font-size: 40px;
+  /* font-weight: bold; */
 }
 
 .intro-except h2 {
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 30px;
+  font-weight: 1000;
+  color: #8662ac;
+    /* margin-bottom: 30px; */
     font-size: 30px;
     }
 
 .intro-except p {
 font-weight: 700;
-color: #ffffff;
+color: #8662ac;
 margin-bottom: 40px;
 
 }
@@ -597,7 +623,7 @@ margin-bottom: 40px;
   .container-hero{
     text-align: center;
     /* position: relative; */
-    padding: 20px;
+    padding: 10px;
     max-height: 0px;
     left: -260px;
     color: #88a1c3;
