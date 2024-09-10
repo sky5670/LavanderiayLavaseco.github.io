@@ -3,7 +3,7 @@ document.getElementById('zoomBtn').addEventListener('click', function() {
     const parallax = document.querySelector('.parallax');
     const description = document.getElementById('description');
     const bubbleContainer = document.querySelector('.bubble-container_menu');
-    const bubbleContainersmall = document.querySelector('.bubble-container_menu_small');
+    // const bubbleContainersmall = document.querySelector('.bubble-container_menu_small');
     const lavadora = document.querySelector(".lavadora-inter");
     const lavadora_boton = document.getElementById("zoomBtn");
     const texto_burbujas = document.querySelector(".content");
@@ -12,9 +12,12 @@ document.getElementById('zoomBtn').addEventListener('click', function() {
     setTimeout(() => {
         //== Mostrar las burbujas con transición
         bubbleContainer.style.display = 'flex';
+        bubbleContainer.style.flexDirection = 'column';
+        bubbleContainer.style.flexWrap = 'wrap';
+        bubbleContainer.style.textAlign = 'center';
         bubbleContainer.style.opacity = '0.8';
-        bubbleContainersmall.style.display = 'flex';
-        bubbleContainersmall.style.opacity = '0.8';
+        // bubbleContainersmall.style.display = 'flex';
+        // bubbleContainersmall.style.opacity = '0.8';
 
         //== baja la opacidad a 0 a la lavadora
         opacidadActual = 0;
@@ -32,7 +35,7 @@ document.getElementById('zoomBtn').addEventListener('click', function() {
         // Revertir los cambios
         parallax.classList.remove('zoomed');
         bubbleContainer.classList.remove('show-bubbles');
-        bubbleContainersmall.classList.remove('show-bubbles');
+        // bubbleContainersmall.classList.remove('show-bubbles');
         
         
     }else {
@@ -41,7 +44,7 @@ document.getElementById('zoomBtn').addEventListener('click', function() {
             parallax.classList.remove('zoomed');
             bubbleContainer.style.opacity = "1"; //== Asegura que el contenedor de burbujas sea visible
             bubbleContainer.classList.add('show-bubbles');
-            bubbleContainersmall.classList.add('show-bubbles');
+            // bubbleContainersmall.classList.add('show-bubbles');
         }, 2000);
     }
 });
