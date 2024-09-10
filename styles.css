@@ -224,7 +224,7 @@ header .menu{
     /* padding: 40px 0; */
 
     /* width: 100vw; */
-    /* height: 70vh; */
+    height: 70vh;
     background-image: url('imagenes/Fondo_1.png');
     background-size: center cover;
     -webkit-background-size: cover;
