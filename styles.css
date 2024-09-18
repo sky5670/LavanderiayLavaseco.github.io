@@ -147,7 +147,7 @@ header ul li a{
     color:#88a1c3;;
     font-weight: 600;
     text-transform: uppercase;
-    /* padding: 10px 15px; */
+    padding: 10px 15px;
 }
 header ul li a:hover{
     border-bottom: 2px solid cadetblue;
@@ -189,6 +189,11 @@ header .menu{
     font-size: 24px;
     font-weight: bold;
     color: #4a90e2;
+}
+
+.logo img{
+  width: 150px;
+  /* height: 100px; */
 }
 
 .menu {
@@ -239,7 +244,7 @@ header .menu{
   z-index: 5;
   /* position: absolute;  */
     /* padding: 15px; */
-    opacity: 0.1;
+    opacity: 0;
     transform: translate(0%, 67%);
     -webkit-border-radius: 4;
     -moz-border-radius: 4;
@@ -341,8 +346,8 @@ a {
 }
 
 .bubble_Item {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     /* display: flex; */
     align-items: center;
     justify-content: center;
@@ -360,8 +365,8 @@ a {
 }
 
 .bubble_Item .img_bubble{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     /* padding: 20px; */
     margin-top: 17px;
     /* margin-right: -270px; */
@@ -568,22 +573,60 @@ button:hover {
   height: 50%;
 }
 
+.lavadora-principal{
+  opacity: 0; /* Empieza transparente */
+            transform: translateX(-100%);
+  transition: transform 1s ease, opacity 1.5s ease;
+}
+.active {
+  opacity: 1; /* La imagen se hace visible */
+  transform: translateX(0); /* La imagen se mueve al centro */
+}
+
 .intro-except .lavadora-principal{
   z-index: 4;
-  /* display: flex; */
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
-  /* width: 15vw; */
   height: 35vh;
+  object-fit: cover;
+  margin-top: -180px;
+  /* display: flex; */
+  /* width: 15vw; */
   /* position: absolute; */
   /* align-items: center; */
   /* justify-content: center; */
-  object-fit: cover;
-  margin-top: -180px;
 }
 .intro-except_button{
   z-index: 6;
+}
+.texto_h1{
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+.texto_h2{
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+.texto_span{
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+.btn-secondary{
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+.active_text {
+  opacity: 1; /* Las letras se hacen visibles */
+  transform: translateY(0); /* Los títulos se mueven a su posición original */
 }
 
 .intro-except h1 {
