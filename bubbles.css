@@ -10,7 +10,7 @@
     /* left: 70%; */
     /* transform: translate(0%, -100%); */
     /* z-index: 3; */
-    margin-top: 120px;
+    /* margin-top: 120px; */
     text-align: right;
     transition: opacity 3s ease 6s  /* Transición de opacidad */
 }
@@ -26,25 +26,27 @@
 
 
 .bubble_menu {
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     display: inline-flex;
-    align-items: baseline;
-    justify-content: center;
     text-align: center;
-    margin: 50px auto;
+    margin: 50px 10px;
     font-size: 18px;
     /* color: #333; */
     border-radius: 50%;
     box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.76);
     animation: riseAndGrow 2s forwards, float 4s 2s infinite;
     opacity: 1;
-    /*animation: float 4s infinite;*/ /* Animación de flotación */
+    /* animation: float 4s infinite; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 }
 .bubble_menu .img_bubble_menu{
-    width: 100px;
-    height: 100px;
-    margin-top: 30px;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
 }
 
 .bubble_menu span{
@@ -56,9 +58,11 @@
     position: absolute;
     font-family: "Inter", sans-serif;
     opacity: 0.8;
-    top:165px;
+    top:140px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
+
+    white-space: normal;
     /* text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
                1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
     */
@@ -68,7 +72,7 @@
     position: absolute;
     font-family: "Inter", sans-serif;
     opacity: 0.8;
-    top:200px;
+    top: 170px;
     color: white;
     font-size: 20px;
     /* text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
