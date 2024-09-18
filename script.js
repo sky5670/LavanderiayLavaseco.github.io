@@ -12,9 +12,10 @@ document.getElementById('zoomBtn').addEventListener('click', function() {
     setTimeout(() => {
         //== Mostrar las burbujas con transición
         bubbleContainer.style.display = 'flex';
-        bubbleContainer.style.flexDirection = 'column';
-        bubbleContainer.style.flexWrap = 'wrap';
-        bubbleContainer.style.textAlign = 'center';
+        // bubbleContainer.style.flexDirection = 'column';
+        bubbleContainer.style.flexFlow = 'column wrap';
+        // bubbleContainer.style.flexWrap = 'wrap';
+        bubbleContainer.style.alignContent = 'center';
         bubbleContainer.style.opacity = '0.8';
         // bubbleContainersmall.style.display = 'flex';
         // bubbleContainersmall.style.opacity = '0.8';
@@ -47,4 +48,34 @@ document.getElementById('zoomBtn').addEventListener('click', function() {
             // bubbleContainersmall.classList.add('show-bubbles');
         }, 2000);
     }
+});
+
+window.addEventListener('load', function() {
+    const imagen = document.getElementById('imagen');
+    setTimeout(() => {
+        imagen.classList.add('active');
+    }, 500);
+})
+
+window.addEventListener('load', function() {
+    const titulo1 = document.getElementById('titulo1');
+    const titulo2 = document.getElementById('titulo2');
+    const titulo3 = document.getElementById('titulo3');
+    const titulo4 = document.getElementById('titulo4');
+    
+    setTimeout(() => {
+        titulo1.classList.add('active_text');
+    }, 500);
+
+    setTimeout(() => {
+        titulo2.classList.add('active_text');
+    }, 1000);
+
+    setTimeout(() => {
+        titulo3.classList.add('active_text');
+    }, 1500);
+
+    setTimeout(() => {
+        titulo4.classList.add('active_text');
+    }, 2000);
 });
