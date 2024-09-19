@@ -1,6 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 
+@media (max-width: 768px) {
+  .intro-except {
+    padding: 15px; /* Ajusta el padding para pantallas medianas */
+  }
+  
+}
+
+/* @media (max-width: 480px) {
+  .intro-except {
+    padding: 10px;
+  }
+} */
+
+
+@media only screen and (max-width: 768px) {
+
+  .intro-except h1 {
+    font-size: 30px;
+  }
+
+  .intro-except h2 {
+    font-size: 20px;
+  }
+
+  .hero{
+    height: 80vh !important;
+  }
+}
+
 body, html {
     min-height:100%;
     margin: 0;
@@ -228,7 +257,7 @@ header .menu{
   background-color: #eaeaea;
   /* padding: 40px 0; */
   /* width: 100vw; */
-  height: 70vh;
+  height: 62vh;
   background-image: url(imagenes/Fondo_7.png);
   background-size: center cover;
   -webkit-background-size: cover;
@@ -345,6 +374,9 @@ a {
      transition: opacity 3s ease 6s; /* Transición de opacidad */
 }
 
+.container_flex h1{
+  text-align: center;
+}
 .bubble_Item {
     width: 100px;
     height: 100px;
@@ -547,7 +579,7 @@ button:hover {
 
 .intro-except{
   
-  text-align: left;
+  text-align: center;
   padding: 20px;
   /* width: 100%; */
   box-sizing: border-box;
@@ -633,7 +665,7 @@ button:hover {
   font-weight: 1000;
   color: #8662ac;
   /* margin-bottom: 30px; */
-  font-size: 40px;
+  
   /* font-weight: bold; */
 }
 
@@ -641,27 +673,16 @@ button:hover {
   font-weight: 1000;
   color: #8662ac;
     /* margin-bottom: 30px; */
-    font-size: 30px;
+    /* font-size: 30px; */
     }
 
 .intro-except p {
 font-weight: 700;
 color: #8662ac;
-margin-bottom: 40px;
+/* margin-bottom: 40px; */
 
 }
 
-@media (max-width: 768px) {
-    .intro-except {
-      padding: 15px; /* Ajusta el padding para pantallas medianas */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .intro-except {
-      padding: 10px; /* Ajusta el padding para pantallas pequeñas */
-    }
-  }
 
   .container-hero{
     text-align: center;
