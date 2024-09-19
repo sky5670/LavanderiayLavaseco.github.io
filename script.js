@@ -7,7 +7,7 @@ document.getElementById('zoomBtn').addEventListener('click', function() {
     const lavadora = document.querySelector(".lavadora-inter");
     const lavadora_boton = document.getElementById("zoomBtn");
     const texto_burbujas = document.querySelector(".content");
-    const texto_principal = document.querySelector(".intro-except");
+    const texto_principal = document.querySelector(".intro-except");   
     
     setTimeout(() => {
         //== Mostrar las burbujas con transición
