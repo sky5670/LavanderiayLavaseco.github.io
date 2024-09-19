@@ -62,6 +62,7 @@ window.addEventListener('load', function() {
     const titulo2 = document.getElementById('titulo2');
     const titulo3 = document.getElementById('titulo3');
     const titulo4 = document.getElementById('titulo4');
+    const titulo5 = document.getElementById('titulo5');
     
     setTimeout(() => {
         titulo1.classList.add('active_text');
@@ -77,5 +78,9 @@ window.addEventListener('load', function() {
 
     setTimeout(() => {
         titulo4.classList.add('active_text');
+    }, 2000);
+    
+    setTimeout(() => {
+        titulo5.classList.add('active_text');
     }, 2000);
 });
