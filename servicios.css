@@ -1,0 +1,32 @@
+.box{
+  position:relative;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 15px;
+  border: 2px solid #fff;
+}
+
+img{
+  width: 100%;
+  transition:all linear 0.7s;
+}
+
+img.hover-img{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.box:hover img{
+  opacity: 0;
+}
+
+.box:hover img.hover-img{
+  
+  opacity: 1;
+}
