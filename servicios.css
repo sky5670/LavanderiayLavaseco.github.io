@@ -7,14 +7,16 @@
   overflow: hidden;
   margin: 15px;
   border: 2px solid #fff;
+  /* top: 70px; */
+  margin-top: 40px;
 }
 
-img{
+.box img{
   width: 100%;
   transition:all linear 0.7s;
 }
 
-img.hover-img{
+.box img.hover-img{
   position: absolute;
   height: 100%;
   top: 0;
@@ -29,4 +31,49 @@ img.hover-img{
 .box:hover img.hover-img{
   
   opacity: 1;
+}
+
+.box:hover .text-overlay{
+  opacity: 0;
+  
+}
+
+.box:hover .text-overlay2{
+  opacity: 1;
+  transition:all linear 0.7s;
+}
+
+.text-overlay{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.text-overlay2{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+}
+
+.content-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content-box h1{
+  position: absolute;
+  top: 120px;
 }
