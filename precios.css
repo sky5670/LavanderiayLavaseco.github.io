@@ -9,8 +9,11 @@ body {
   margin: 50px auto;
   border-collapse: collapse; /* Elimina los espacios entre las celdas */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  padding: 101px;
 }
-
+.padding-fix{
+  padding: 100px;
+}
 .tabla-precios th, .tabla-precios td {
   padding: 12px; /* Espacio interno de las celdas */
   text-align: center; /* Centra el contenido del texto */
@@ -28,4 +31,15 @@ body {
 
 .tabla-precios tr:hover {
   background-color: #ddd; /* Efecto hover al pasar el mouse */
+}
+
+.button_bubble{
+  margin-top: 0px;
+  position: absolute;
+  margin-left: -80px;
+  width: 100px;
+  height: 100px;
+  border: 0px;
+  border-radius: 50%;
+  opacity: 0;
 }
