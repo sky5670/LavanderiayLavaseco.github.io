@@ -14,6 +14,7 @@
     <link href="css/tiny-slider.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="precios.css">
+    <link rel="stylesheet" href="footer.css">
     
     
 </head>
@@ -37,9 +38,9 @@
                 <!-- <li><a href="#" id="WebChange">3D/2D</a></li> -->
                 
                 <li>
-                    <a href="https://www.facebook.com/profile.php?id=61562678431704&ref=xav_ig_profile_web"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/lavanderiamaipu/profilecard/"><i class="fa fa-instagram"></i></a>
-                    <!-- <a href="https://www.facebook.com/profile.php?id=61562678431704&ref=xav_ig_profile_web"><i class="fa fa-twitter"></i></a> -->
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
                       
                 </li>
             </ul>
@@ -53,8 +54,75 @@
     <!-- Sección principal -->
     <main>
         <div class="parallax">
-            <!-- <div class="hero"> -->
-                <table class="tabla-precios">
+            
+            <div class="services">
+                <div class="service-item">
+                    <div class="bubble_Item">
+                    <img src="imagenes/iconos/cubrecamas.png" class="img_bubble" alt="Logo de la marca" href="index.html">
+                    <button class="button_bubble" onclick="Cubrecamas()"></button>
+                    <h3>Cubrecamas</h3>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="bubble_Item">
+                    <img src="imagenes/iconos/RopaDeVestir.png" class="img_bubble" alt="Logo de la marca" href="index.html">
+                    <button class="button_bubble" onclick="Ropadevestir()"></button>
+                    <h3>Ropa de vestir</h3>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="bubble_Item">
+                    <img src="imagenes/iconos/RopaDeCama.png" class="img_bubble" alt="Logo de la marca" href="index.html">
+                    <button class="button_bubble" onclick="Ropadecama()"></button>
+                    <h3>Ropa de cama</h3>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="bubble_Item">
+                    <img src="imagenes/iconos/Frazada.png" class="img_bubble" alt="Logo de la marca" href="index.html">
+                    <button class="button_bubble" onclick="Frazadas()"></button>
+                    <h3>Frazada</h3>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="bubble_Item">
+                    <img src="imagenes/iconos/Sabanas.png" class="img_bubble" alt="Logo de la marca" href="index.html">
+                    <button class="button_bubble" onclick="Sabanas()"></button>
+                    <h3>Sabanas</h3>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="bubble_Item">
+                    <img src="imagenes/iconos/Tenido.png" class="img_bubble" alt="Logo de la marca" href="index.html">
+                    <button class="button_bubble" onclick="Tenidos()"></button>
+                    <h3>Teñidos</h3>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="bubble_Item">
+                    <img src="imagenes/iconos/Alfombra.png" class="img_bubble" alt="Logo de la marca" href="index.html">
+                    <button class="button_bubble" onclick="Alfombras()"></button>
+                    <h3>Alfombras</h3>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="bubble_Item">
+                    <img src="imagenes/iconos/Zapato.png" class="img_bubble" alt="Logo de la marca" href="index.html">
+                    <button class="button_bubble" onclick="Zapatos()"></button>
+                    <h3>Zapatos</h3>
+                    </div>
+                </div>
+            </div>
+        
+            
+                <table class="tabla-precios"  id="tabla1">
                     <thead>
                         <tr>
                             <th>Cubrecamas </th>
@@ -97,7 +165,8 @@
                             <td>$6.000</td>
                         </tr>
                     </tbody>
-
+                </table>
+                <table class="tabla-precios" style="display:none;" id="tabla2">
                     <thead>
                         <tr>
                             <th>Ropa de vestir </th>
@@ -105,7 +174,7 @@
 
                         </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody>
                         <tr>
                             <td>Abrigo corto</td>
                             <td>$7.000</td>
@@ -168,6 +237,8 @@
                             <td>$5.000 - $7.000</td>
                         </tr>
                     </tbody>
+                </table>
+                <table class="tabla-precios" style="display:none;" id="tabla3">
                     <thead>
                         <tr>
                             <th>Ropa de cama </th>
@@ -203,7 +274,8 @@
                             <td>$17.000</td>
                         </tr>
                     </tbody>
-
+                </table>
+                <table class="tabla-precios" style="display:none;" id="tabla4">
                     <thead>
                         <tr>
                             <th>Frazadas</th>
@@ -227,7 +299,8 @@
                             <td>$5.000</td>
                         </tr>
                     </tbody>
-
+                </table>
+                <table class="tabla-precios" style="display:none;" id="tabla5">
                     <thead>
                         <tr>
                             <th>Sabanas</th>
@@ -246,7 +319,8 @@
                             <td>$6.500</td>
                         </tr>
                     </tbody>
-
+                </table>
+                <table class="tabla-precios" style="display:none;" id="tabla6">
                     <thead>
                         <tr>
                             <th>Teñidos</th>
@@ -269,7 +343,8 @@
                             <td>$15.000</td>
                         </tr>
                     </tbody>
-
+                </table>
+                <table class="tabla-precios" style="display:none;" id="tabla7">
                     <thead>
                         <tr>
                             <th>Alfombras</th>
@@ -283,7 +358,8 @@
                             <td>$5.000</td>         
                         </tr>
                     </tbody>
-
+                </table>
+                <table class="tabla-precios" style="display:none;" id="tabla8" >
                     <thead>
                         <tr>
                             <th>Zapatos</th>
@@ -299,80 +375,41 @@
                     </tbody>
                 </table>
             </div>
-         <!-- </div>    -->
+            <div class="padding-fix"></div>
+        </div>
+        
     </main>
 
     
     
          
     <!-- Start Footer Section -->
-		<footer class="footer-section">
-			<div class="container relative">
-
-				<div class="sofa-img">
-					<img src="imagenes/lavadora.png" alt="Image" class="img-fluid">
-				</div>
-
-				<div class="row">
-					<div class="col-lg-8">
-						<div class="subscription-form">
-							<h3 class="d-flex align-items-center"><span class="me-1"><img src="imagenes/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Suscribete a nuestra pagina</span></h3>
-
-							<form action="#" class="row g-3">
-								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="Ingresa tu nombre">
-								</div>
-								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="Ingresa tu correo">
-								</div>
-								<div class="col-auto">
-									<button class="btn btn-primary">
-										<span class="fa fa-paper-plane"></span>
-									</button>
-								</div>
-							</form>
-
-						</div>
-					</div>
-				</div>
-
-				<div class="row g-5 mb-5">
-					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Nuestras redes<span>.</span></a></div>
-						<p class="mb-4">Siguenos a las redes sociales y tener actualizaciones de nuestros servicios</p>
-
-						<ul class="list-unstyled custom-social">
-							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
-						</ul>
-					</div>
-
-				
-
-				</div>
-
-				<div class="border-top copyright">
-					<div class="row pt-4">
-						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Creado por Javier pérez de arce Gonzalez
-                </p>
-						</div>
-
-						<div class="col-lg-6 text-center text-lg-end">
-							<ul class="list-unstyled d-inline-flex ms-auto">
-								<li class="me-4"><a href="#">Termino &amp; Condiciones</a></li>
-								<li><a href="#">Politica de privacidad</a></li>
-							</ul>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-		</footer>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box_footer">
+                <h2>Horario de atención</h2>
+                <p>Lunes a viernes: 9:00 - 19:00 hrs</p>
+                <p>Sabado a domingo: 9:00 - 15:00 hrs</p>
+            </div>
+            <div class="box_footer">
+                <h2>Contactanos</h2>
+                <p>+56 9 3293 6746</p>
+                <p>Arturo Godoy1565, Maipú, Región Metropolitana</p>
+            </div>
+            <div class="box_footer">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Javier pérez de arce</b> Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
 		<!-- End Footer Section -->	
         <script src="script.js"></script>
-</body>
+        <script src="tablas.js"></script>
+    </body>
 </html>
