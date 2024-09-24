@@ -1,3 +1,16 @@
+@media only screen and (max-width: 768px) {
+
+    .bubble_menu {
+        width: 350px !important;
+        height: 350px !important;
+        margin: 100px 10px !important; 
+    }
+
+    .bubble_menu .video_bubble{
+        margin: 20px auto !important;
+  }
+}
+
 .bubble-container_menu {
     display: none;
     z-index: 3;
@@ -17,7 +30,9 @@
 
 .bubble-container_menu h1{
     text-align: center;
-    color: #8662ac;
+    /* color: #8662ac; */
+    color: white;
+    font-weight: 1000;
 }
 
 .container_flex{
@@ -31,11 +46,11 @@
 
 
 .bubble_menu {
-    width: 100px;
-    height: 100px;
+    width: 440px;
+    height: 440px;
     display: inline-flex;
     text-align: center;
-    margin: 47px 10px;
+    margin: 10px 10px;
     font-size: 18px;
     /* color: #333; */
     border-radius: 50%;
@@ -52,6 +67,17 @@
     width: 60px;
     height: 60px;
     margin-top: 20px;
+}
+
+.bubble_menu .video_bubble{
+    border-radius: 240px;
+    height: 90%;
+    width: 90%;
+    margin: 25px auto;
+    display: block;
+    max-width: 600px;
+    opacity: 0.8;
+    object-fit: fill;
 }
 
 .bubble_menu span{
